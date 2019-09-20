@@ -1,0 +1,219 @@
+@black: #000103;
+@white: #FFFFFA;
+@bg: #333138;
+@light-bg: #515052;
+@main: #FF312E;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @bg;
+    color: @white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 18px;
+    z-index: 2;
+
+    .header-list {
+        display: flex;
+        list-style: none;
+        &-item {
+            margin-left: 25px;
+            a {
+                color: @white;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                transition: all .35s;
+                &:hover {
+                    color: @main;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 75px 100px;
+}
+
+.hero {
+    align-items: center;
+    background-image: url('../assets/hero.jpg');
+    background-position: top right;
+    background-size: cover;
+    position: relative;
+
+    .backcolor {
+        position: absolute;
+        background-color: rgba(51, 49, 56, 0.3);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &-content {
+        z-index: 1;
+        width: 55%;
+        h1 {
+            font-size: 3.8vw;
+        }
+        h2 {
+            font-size: 2.2vw;
+            margin-bottom: 58px;
+        }
+    }
+}
+
+.order-btn {
+    font-size: 20px;
+    color: @white;
+    padding: 12px 18px;
+    background-color: @main;
+    border: 2px solid @main;
+    transition: all .45s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 150px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: transparent;
+        color: @main;
+    }
+}
+
+.content-section {
+    flex-direction: column;
+    background-color: @white;
+    color: @black;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .content-item {
+            width: 33%;
+            margin-bottom: 38px;
+            &-title {
+                color: @bg;
+            }
+            &-descr {
+                width: 75%;
+                margin-bottom: 0;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 105px;
+    font-weight: bold;
+    color: @main;
+    text-align: center;
+}
+
+.cost-setting {
+    flex-direction: column;
+
+    .item {
+        img {
+            margin-bottom: 38px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
+
+.why-section {
+    flex-direction: column;
+    min-height: auto;
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+
+    .why-list {
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 26px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        list-style: none;
+        &-item {
+            display: flex;
+            align-items: center;
+            img {
+                display: block;
+                margin-right: 24px;
+                width: 75px;
+            }
+            margin-bottom: 48px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+.demo-section {
+    flex-direction: column;
+    .embeded {
+        height: 820px;
+        margin: 26px;
+    }
+}
+
+.buy-section {
+    flex-direction: column;
+    background-color: @white;
+    color: @black;
+    min-height: auto;
+
+    .description {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .checkout-form {
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
+
+    .notice {
+        font-size: 13px;
+        text-align: center;
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+    a {
+        color: #fff;
+    }
+}
