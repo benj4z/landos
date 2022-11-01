@@ -9,7 +9,7 @@
   "author": "Jakuba",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-connect": "^5.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-less": "^3.3.0",
